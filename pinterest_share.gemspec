@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
-  gem.name          = "pinterest"
+  gem.name          = "pinterest-share"
   gem.require_paths = ["lib"]
   gem.version       = PinterestShare::VERSION
 end
