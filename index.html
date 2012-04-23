@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Pinterest-share by mauriziodemagnis</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/mauriziodemagnis/pinterest-share">Fork On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/mauriziodemagnis/pinterest-share/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/mauriziodemagnis/pinterest-share/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Pinterest-share</h1>
+          <p>Generates share URLs for Pinterest.</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/mauriziodemagnis">mauriziodemagnis</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>Pinterest Share</h1>
+
+<p>Create a share url for Pinterest.</p>
+
+<h2>Pinterest documentation</h2>
+
+<p><a href="http://pinterest.com/about/goodies/">Pin It Button for Web Sites</a></p>
+
+<h2>Installation</h2>
+
+<p>Add this line to your application's Gemfile:</p>
+
+<pre><code>gem 'pinterest-share'
+</code></pre>
+
+<p>And then execute:</p>
+
+<pre><code>$ bundle
+</code></pre>
+
+<p>Or install it yourself as:</p>
+
+<pre><code>$ gem install pinterest-share
+</code></pre>
+
+<h2>Usage</h2>
+
+<div class="highlight">
+<pre><span class="nb">require</span> <span class="s1">'pinterest_share'</span>
+<span class="n">options</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="n">url</span><span class="p">:</span> <span class="s1">'http://red-object.net'</span><span class="p">,</span>
+  <span class="n">media</span><span class="p">:</span> <span class="s1">'http://a1.twimg.com/profile_images/1288708278/2010_tron_legacy-wide_normal.jpg'</span>
+<span class="p">}</span>
+<span class="no">PinterestShare</span><span class="o">::</span><span class="no">Generation</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">options</span><span class="p">)</span><span class="o">.</span><span class="n">to_s</span>
+<span class="o">=&gt;</span> <span class="s2">"http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fred-object.net&amp;media=http%3A%2F%2Fa1.twimg.com%2Fprofile_images%2F1288708278%2F2010_tron_legacy-wide_normal.jpg"</span>
+</pre>
+</div>
+
+
+<h2>Test</h2>
+
+<pre lang="shell"><code>$ guard
+</code></pre>
+
+<h2>Support</h2>
+
+<p>At the moment it only supports Ruby &gt;= 1.9.</p>
+
+<h2>Contributing</h2>
+
+<ol>
+<li>Fork it</li>
+<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+<li>Commit your changes (<code>git commit -am 'Added some feature'</code>)</li>
+<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+<li>Create new Pull Request</li>
+</ol>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+    
+  </body>
+</html>
