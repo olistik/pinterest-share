@@ -1,5 +1,7 @@
 # Pinterest Share
 
+[![Build Status](https://secure.travis-ci.org/mauriziodemagnis/pinterest-share.png)](http://travis-ci.org/mauriziodemagnis/pinterest-share)
+
 Create a share url for Pinterest.
 
 ## Pinterest documentation
