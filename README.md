@@ -34,7 +34,7 @@ $ guard
 
 ## Support
 
-At the moment is only supports Ruby >= 1.9.
+At the moment it only supports Ruby >= 1.9.
 
 ## Contributing
 
