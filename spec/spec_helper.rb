@@ -1,0 +1,1 @@
+require 'pinterest_share'
