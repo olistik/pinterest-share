@@ -23,7 +23,9 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-Pinterest::Generation.new(options).to_s
+require 'pinterest-share'
+
+PinterestShare::Generation.new(options).to_s
 ```
 
 ## Test
